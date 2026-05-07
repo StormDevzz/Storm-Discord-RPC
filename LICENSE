@@ -1,21 +1,32 @@
-MIT License
-
+STORM DISCORD RPC - READ-ONLY LICENSE
 Copyright (c) 2026 StormDevzz
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+This license grants you the right to READ, VIEW, and STUDY the source code of this software for educational purposes only.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+PERMITTED ACTIVITIES:
+- Reading and viewing the source code
+- Studying the code for learning purposes
+- Understanding the implementation and architecture
+- Running the compiled application as provided
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+STRICTLY PROHIBITED:
+- Modifying the source code
+- Creating derivative works
+- Redistributing the source code
+- Using the code in other projects
+- Commercial exploitation of the code
+- Reverse engineering attempts
+- Decompiling or extracting the code
+- Selling or licensing the code to others
+- Copying portions of the code for external use
+
+VIOLATION CONSEQUENCES:
+Any violation of this license will result in immediate termination of all rights to use this software. Legal action may be pursued for unauthorized use, modification, or distribution.
+
+DISCLAIMER:
+The software is provided "AS IS" without any warranty. The author is not liable for any damages arising from the use of this software.
+
+CONTACT:
+For licensing inquiries or permission requests, contact StormDevzz.
+
+This license is effective immediately upon accessing the source code and remains in perpetuity.

@@ -1,0 +1,3 @@
+/home/abrakadam/Storm Discord RPC/Linux/build/CMakeFiles/storm-discord-rpc.dir
+/home/abrakadam/Storm Discord RPC/Linux/build/CMakeFiles/edit_cache.dir
+/home/abrakadam/Storm Discord RPC/Linux/build/CMakeFiles/rebuild_cache.dir

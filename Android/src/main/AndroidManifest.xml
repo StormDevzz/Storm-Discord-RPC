@@ -32,7 +32,7 @@
         
         <!-- главный актив -->
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivityClean"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.StormDiscordRPC" />

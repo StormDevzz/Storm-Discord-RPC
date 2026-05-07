@@ -16,6 +16,10 @@
         "source": "com.storm.discordrpc.app-main-34:/layout/activity_settings.xml"
     },
     {
+        "merged": "com.storm.discordrpc.app-mergeDebugResources-30:/layout/activity_main_new.xml",
+        "source": "com.storm.discordrpc.app-main-34:/layout/activity_main_new.xml"
+    },
+    {
         "merged": "com.storm.discordrpc.app-mergeDebugResources-30:/layout/item_notification_setting.xml",
         "source": "com.storm.discordrpc.app-main-34:/layout/item_notification_setting.xml"
     },

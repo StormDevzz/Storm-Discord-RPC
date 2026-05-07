@@ -47,6 +47,7 @@ id notificationTitle
 id progressBar
 id richPresenceDocsLink
 id rpcStatusText
+id settingsButton
 id startButton
 id stateEditText
 id statusEditText
@@ -59,6 +60,7 @@ id viewPager
 layout activity_client_id
 layout activity_help
 layout activity_main
+layout activity_main_new
 layout activity_main_with_tabs
 layout activity_settings
 layout fragment_settings

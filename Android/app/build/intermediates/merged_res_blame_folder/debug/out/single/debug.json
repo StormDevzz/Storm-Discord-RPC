@@ -68,6 +68,10 @@
         "source": "com.storm.discordrpc.app-main-34:/drawable/ic_notification.xml"
     },
     {
+        "merged": "com.storm.discordrpc.app-merged_res-31:/layout_activity_main_new.xml.flat",
+        "source": "com.storm.discordrpc.app-main-34:/layout/activity_main_new.xml"
+    },
+    {
         "merged": "com.storm.discordrpc.app-merged_res-31:/drawable_button_primary.xml.flat",
         "source": "com.storm.discordrpc.app-main-34:/drawable/button_primary.xml"
     },

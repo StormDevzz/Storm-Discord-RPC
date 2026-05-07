@@ -156,14 +156,6 @@ export STORM_DISCORD_DEBUG=1
 
 Этот проект лицензирован под MIT License - см. файл [LICENSE](LICENSE).
 
-## Контакты
-
-- **Автор**: StormDevzz
-- **Email**: yehorslyvkin@gmail.com
-- **GitHub**: https://github.com/StormDevzz
-
----
-
 # Storm Discord RPC
 
 Cross-platform Discord Rich Presence management application with support for Linux, Windows and Android.

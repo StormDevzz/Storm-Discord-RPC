@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/gradient_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <!-- Заголовок -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚡ Storm Discord RPC"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Client ID информация -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔑 Client ID"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/clientIdDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Загрузка..."
+                android:textSize="14sp"
+                android:textColor="#B8B8D1"
+                android:background="#0F3460"
+                android:padding="12dp" />
+
+        </LinearLayout>
+
+        <!-- Поля для статуса -->
+        <EditText
+            android:id="@+id/statusEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="твой статус"
+            android:textColorHint="#B8B8D1"
+            android:textColor="#FFFFFF"
+            android:background="#0F3460"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/detailsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="детали (необязательно)"
+            android:textColorHint="#B8B8D1"
+            android:textColor="#FFFFFF"
+            android:background="#0F3460"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/stateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="состояние (необязательно)"
+            android:textColorHint="#B8B8D1"
+            android:textColor="#FFFFFF"
+            android:background="#0F3460"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Кнопки управления -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/startButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🚀 запустить"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/button_primary"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/stopButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="⏹️ остановить"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/button_success"
+                android:enabled="false"
+                android:alpha="0.5"
+                android:layout_marginStart="8dp" />
+
+        </LinearLayout>
+
+        <!-- Автозапуск -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <Switch
+                android:id="@+id/autoStartSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔄 автозапуск"
+                android:textColor="#B8B8D1"
+                android:layout_marginStart="8dp" />
+
+        </LinearLayout>
+
+        <!-- Статус RPC -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📊 Статус RPC"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/rpcStatusText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="❌ RPC не запущен"
+                android:textSize="14sp"
+                android:textColor="#E94560"
+                android:background="#0F3460"
+                android:padding="12dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/gradient_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Заголовок -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚙️ Настройки"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Уведомления -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🔔 Все уведомления"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Включить все уведомления приложения"
+                    android:textSize="14sp"
+                    android:textColor="#B8B8D1" />
+
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/mainNotificationsSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumbTint="#533483"
+                android:trackTint="#7B52AB" />
+
+        </LinearLayout>
+
+        <!-- Разделитель -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#533483"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Заголовок типов уведомлений -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📱 Типы уведомлений"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Список настроек уведомлений -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/notificationSettingsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Кнопка тестового уведомления -->
+        <Button
+            android:id="@+id/testNotificationButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="🧪 Тестовое уведомление"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_primary"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Client ID настройки -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔑 Client ID"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/currentClientId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Текущий Client ID: Загрузка..."
+                android:textSize="14sp"
+                android:textColor="#B8B8D1"
+                android:background="#0F3460"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/changeClientIdButton"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="🔄 Изменить Client ID"
+                android:textSize="14sp"
+                android:background="#7B52AB"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <!-- Информация о приложении -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ℹ️ О приложении"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Storm Discord RPC v1.0\n\nПриложение для настройки Discord Rich Presence на Android устройствах.\n\nСоздано с ❤️ для сообщества Discord"
+                android:textSize="14sp"
+                android:textColor="#B8B8D1" />
+
+        </LinearLayout>
+
+        <!-- Кнопка возврата -->
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="🔙 Назад"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="#7B52AB"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,66 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.storm.discordrpc'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.storm.discord.rpc"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        
+        // изменяем имя APK при сборке
+        archivesBaseName = "Storm Discord RPC"
+    }
+
+    sourceSets {
+        main {
+            java {
+                srcDirs '../src/main/java'
+            }
+            res {
+                srcDirs '../src/main/res'
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    
+    // ViewPager и TabLayout
+    implementation 'androidx.viewpager:viewpager:1.0.0'
+    implementation 'androidx.fragment:fragment:1.6.2'
+    
+    // discord rpc библиотека (временно закомментирована)
+    // implementation 'com.discord:discord-rpc:1.0.0'
+    
+    // анимации и эффекты
+    implementation 'androidx.cardview:cardview:1.0.0'
+    
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

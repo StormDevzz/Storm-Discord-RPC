@@ -1,0 +1,35 @@
+com.storm.discordrpc.app-appcompat-resources-1.6.1-0 /home/abrakadam/.gradle/caches/8.14/transforms/0331b5cba3bea6bece4b8a1b650fff36/transformed/appcompat-resources-1.6.1/res
+com.storm.discordrpc.app-viewpager2-1.0.0-1 /home/abrakadam/.gradle/caches/8.14/transforms/06a5258922a40de2f385627a649c97b8/transformed/viewpager2-1.0.0/res
+com.storm.discordrpc.app-core-ktx-1.9.0-2 /home/abrakadam/.gradle/caches/8.14/transforms/1e67a1ece53eae783aa6942fb1070ef6/transformed/core-ktx-1.9.0/res
+com.storm.discordrpc.app-appcompat-1.6.1-3 /home/abrakadam/.gradle/caches/8.14/transforms/425c56c60b84c4895ad992186e38c31f/transformed/appcompat-1.6.1/res
+com.storm.discordrpc.app-profileinstaller-1.3.0-4 /home/abrakadam/.gradle/caches/8.14/transforms/455579a8cde73891957e019b7d3662d6/transformed/profileinstaller-1.3.0/res
+com.storm.discordrpc.app-lifecycle-livedata-core-2.6.1-5 /home/abrakadam/.gradle/caches/8.14/transforms/464f63dc4c03c336bf257cc677d922a6/transformed/lifecycle-livedata-core-2.6.1/res
+com.storm.discordrpc.app-lifecycle-viewmodel-2.6.1-6 /home/abrakadam/.gradle/caches/8.14/transforms/4904ec8461e78eef841448f157621a63/transformed/lifecycle-viewmodel-2.6.1/res
+com.storm.discordrpc.app-activity-1.8.0-7 /home/abrakadam/.gradle/caches/8.14/transforms/55f05cf8aad98c763e37badf676f16cb/transformed/activity-1.8.0/res
+com.storm.discordrpc.app-lifecycle-runtime-2.6.1-8 /home/abrakadam/.gradle/caches/8.14/transforms/570915ec2fa4e582ecfb5d36ea515602/transformed/lifecycle-runtime-2.6.1/res
+com.storm.discordrpc.app-constraintlayout-2.1.4-9 /home/abrakadam/.gradle/caches/8.14/transforms/6818dbe739f439370867bfb4e15fe2c6/transformed/constraintlayout-2.1.4/res
+com.storm.discordrpc.app-lifecycle-process-2.6.1-10 /home/abrakadam/.gradle/caches/8.14/transforms/6831b92c258556a3a1f02adc9b2e3324/transformed/lifecycle-process-2.6.1/res
+com.storm.discordrpc.app-material-1.10.0-11 /home/abrakadam/.gradle/caches/8.14/transforms/6979be4ab7119b8e6e8e43d97c9ab785/transformed/material-1.10.0/res
+com.storm.discordrpc.app-core-runtime-2.2.0-12 /home/abrakadam/.gradle/caches/8.14/transforms/735d130eaa87aa5583efb7b6dba13ced/transformed/core-runtime-2.2.0/res
+com.storm.discordrpc.app-coordinatorlayout-1.1.0-13 /home/abrakadam/.gradle/caches/8.14/transforms/7d5f421b549fa1ecd315908896f02491/transformed/coordinatorlayout-1.1.0/res
+com.storm.discordrpc.app-emoji2-1.2.0-14 /home/abrakadam/.gradle/caches/8.14/transforms/803cdac777c831ed15c120ed40627524/transformed/emoji2-1.2.0/res
+com.storm.discordrpc.app-core-1.9.0-15 /home/abrakadam/.gradle/caches/8.14/transforms/819903cd0589da283e5ce57f60bba497/transformed/core-1.9.0/res
+com.storm.discordrpc.app-savedstate-1.2.1-16 /home/abrakadam/.gradle/caches/8.14/transforms/8dc19976233f6d57ec5d0e00f00436ec/transformed/savedstate-1.2.1/res
+com.storm.discordrpc.app-transition-1.2.0-17 /home/abrakadam/.gradle/caches/8.14/transforms/94ea27e605d0e46352bad92234644064/transformed/transition-1.2.0/res
+com.storm.discordrpc.app-annotation-experimental-1.3.0-18 /home/abrakadam/.gradle/caches/8.14/transforms/9c3838570b7922f6f44987b19412128d/transformed/annotation-experimental-1.3.0/res
+com.storm.discordrpc.app-lifecycle-livedata-2.6.1-19 /home/abrakadam/.gradle/caches/8.14/transforms/a0364ca52396b34b217510018d352390/transformed/lifecycle-livedata-2.6.1/res
+com.storm.discordrpc.app-lifecycle-viewmodel-savedstate-2.6.1-20 /home/abrakadam/.gradle/caches/8.14/transforms/a7a0fcf04993451a2d9ba07dcfa4604c/transformed/lifecycle-viewmodel-savedstate-2.6.1/res
+com.storm.discordrpc.app-recyclerview-1.1.0-21 /home/abrakadam/.gradle/caches/8.14/transforms/ace1127aecf4d143fa51dbf973e3a9d8/transformed/recyclerview-1.1.0/res
+com.storm.discordrpc.app-fragment-1.6.2-22 /home/abrakadam/.gradle/caches/8.14/transforms/cc6179371e0cda67abe2bc91ceca00af/transformed/fragment-1.6.2/res
+com.storm.discordrpc.app-drawerlayout-1.1.1-23 /home/abrakadam/.gradle/caches/8.14/transforms/d73f33bd1f6fa89d30fc6e69060a32be/transformed/drawerlayout-1.1.1/res
+com.storm.discordrpc.app-cardview-1.0.0-24 /home/abrakadam/.gradle/caches/8.14/transforms/dd61edf424cba3d17cdbb37f4f9a403a/transformed/cardview-1.0.0/res
+com.storm.discordrpc.app-startup-runtime-1.1.1-25 /home/abrakadam/.gradle/caches/8.14/transforms/dddf374ee6a9b033c490e0aa879d6949/transformed/startup-runtime-1.1.1/res
+com.storm.discordrpc.app-emoji2-views-helper-1.2.0-26 /home/abrakadam/.gradle/caches/8.14/transforms/e26c35b65c1961c13dceeadef34504bf/transformed/emoji2-views-helper-1.2.0/res
+com.storm.discordrpc.app-pngs-27 /home/abrakadam/Storm Discord RPC/Android/app/build/generated/res/pngs/debug
+com.storm.discordrpc.app-resValues-28 /home/abrakadam/Storm Discord RPC/Android/app/build/generated/res/resValues/debug
+com.storm.discordrpc.app-packageDebugResources-29 /home/abrakadam/Storm Discord RPC/Android/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.storm.discordrpc.app-packageDebugResources-30 /home/abrakadam/Storm Discord RPC/Android/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.storm.discordrpc.app-merged_res-31 /home/abrakadam/Storm Discord RPC/Android/app/build/intermediates/merged_res/debug
+com.storm.discordrpc.app-debug-32 /home/abrakadam/Storm Discord RPC/Android/app/src/debug/res
+com.storm.discordrpc.app-main-33 /home/abrakadam/Storm Discord RPC/Android/app/src/main/res
+com.storm.discordrpc.app-main-34 /home/abrakadam/Storm Discord RPC/Android/src/main/res

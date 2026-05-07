@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- главная тема приложения -->
+    <style name="Theme.StormDiscordRPC" parent="Theme.Material3.DayNight">
+        <!-- основные цвета -->
+        <item name="colorPrimary">#533483</item>
+        <item name="colorPrimaryVariant">#7B52AB</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        
+        <!-- вторичные цвета -->
+        <item name="colorSecondary">#0F3460</item>
+        <item name="colorSecondaryVariant">#16213E</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        
+        <!-- цвет статус бара -->
+        <item name="android:statusBarColor" tools:targetApi="l">#16213E</item>
+        
+        <!-- цвет навигационной панели -->
+        <item name="android:navigationBarColor" tools:targetApi="l">#16213E</item>
+    </style>
+</resources>

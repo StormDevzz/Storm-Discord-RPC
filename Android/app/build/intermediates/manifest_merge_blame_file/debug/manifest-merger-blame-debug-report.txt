@@ -1,0 +1,158 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.storm.discord.rpc"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- разрешения для интернета и фоновых сервисов -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:6:5-67
+12-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+13-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:7:5-77
+13-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:7:22-74
+14    <uses-permission android:name="android.permission.WAKE_LOCK" />
+14-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:8:5-68
+14-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:8:22-65
+15
+16    <permission
+16-->[androidx.core:core:1.9.0] /home/abrakadam/.gradle/caches/8.14/transforms/819903cd0589da283e5ce57f60bba497/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+17        android:name="com.storm.discord.rpc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+17-->[androidx.core:core:1.9.0] /home/abrakadam/.gradle/caches/8.14/transforms/819903cd0589da283e5ce57f60bba497/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+18        android:protectionLevel="signature" />
+18-->[androidx.core:core:1.9.0] /home/abrakadam/.gradle/caches/8.14/transforms/819903cd0589da283e5ce57f60bba497/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+19
+20    <uses-permission android:name="com.storm.discord.rpc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+20-->[androidx.core:core:1.9.0] /home/abrakadam/.gradle/caches/8.14/transforms/819903cd0589da283e5ce57f60bba497/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+20-->[androidx.core:core:1.9.0] /home/abrakadam/.gradle/caches/8.14/transforms/819903cd0589da283e5ce57f60bba497/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+21
+22    <application
+22-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:10:5-39:19
+23        android:allowBackup="true"
+23-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:11:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.9.0] /home/abrakadam/.gradle/caches/8.14/transforms/819903cd0589da283e5ce57f60bba497/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+25        android:dataExtractionRules="@xml/data_extraction_rules"
+25-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:12:9-65
+26        android:debuggable="true"
+27        android:extractNativeLibs="true"
+28        android:fullBackupContent="@xml/backup_rules"
+28-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:13:9-54
+29        android:icon="@mipmap/ic_launcher"
+29-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:14:9-43
+30        android:label="@string/app_name"
+30-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:15:9-41
+31        android:roundIcon="@mipmap/ic_launcher_round"
+31-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:16:9-54
+32        android:supportsRtl="true"
+32-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:17:9-35
+33        android:theme="@style/Theme.StormDiscordRPC" >
+33-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:18:9-53
+34
+35        <!-- главный актив -->
+36        <activity
+36-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:22:9-31:20
+37            android:name="com.storm.discordrpc.MainActivity"
+37-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:23:13-41
+38            android:exported="true"
+38-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:24:13-36
+39            android:screenOrientation="portrait"
+39-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:25:13-49
+40            android:theme="@style/Theme.StormDiscordRPC" >
+40-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:26:13-57
+41            <intent-filter>
+41-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:27:13-30:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:28:17-69
+42-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:28:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:29:17-77
+44-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:29:27-74
+45            </intent-filter>
+46        </activity>
+47
+48        <!-- сервис для discord rpc -->
+49        <service
+49-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:34:9-38:56
+50            android:name="com.storm.discordrpc.DiscordRPCService"
+50-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:35:13-46
+51            android:enabled="true"
+51-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:36:13-35
+52            android:exported="false"
+52-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:37:13-37
+53            android:foregroundServiceType="dataSync" />
+53-->/home/abrakadam/Storm Discord RPC/Android/app/src/main/AndroidManifest.xml:38:13-53
+54
+55        <provider
+55-->[androidx.emoji2:emoji2:1.2.0] /home/abrakadam/.gradle/caches/8.14/transforms/803cdac777c831ed15c120ed40627524/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+56            android:name="androidx.startup.InitializationProvider"
+56-->[androidx.emoji2:emoji2:1.2.0] /home/abrakadam/.gradle/caches/8.14/transforms/803cdac777c831ed15c120ed40627524/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+57            android:authorities="com.storm.discord.rpc.androidx-startup"
+57-->[androidx.emoji2:emoji2:1.2.0] /home/abrakadam/.gradle/caches/8.14/transforms/803cdac777c831ed15c120ed40627524/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+58            android:exported="false" >
+58-->[androidx.emoji2:emoji2:1.2.0] /home/abrakadam/.gradle/caches/8.14/transforms/803cdac777c831ed15c120ed40627524/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+59            <meta-data
+59-->[androidx.emoji2:emoji2:1.2.0] /home/abrakadam/.gradle/caches/8.14/transforms/803cdac777c831ed15c120ed40627524/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+60                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+60-->[androidx.emoji2:emoji2:1.2.0] /home/abrakadam/.gradle/caches/8.14/transforms/803cdac777c831ed15c120ed40627524/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+61                android:value="androidx.startup" />
+61-->[androidx.emoji2:emoji2:1.2.0] /home/abrakadam/.gradle/caches/8.14/transforms/803cdac777c831ed15c120ed40627524/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+62            <meta-data
+62-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/abrakadam/.gradle/caches/8.14/transforms/6831b92c258556a3a1f02adc9b2e3324/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
+63                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+63-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/abrakadam/.gradle/caches/8.14/transforms/6831b92c258556a3a1f02adc9b2e3324/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
+64                android:value="androidx.startup" />
+64-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/abrakadam/.gradle/caches/8.14/transforms/6831b92c258556a3a1f02adc9b2e3324/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+65            <meta-data
+65-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/abrakadam/.gradle/caches/8.14/transforms/455579a8cde73891957e019b7d3662d6/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+66                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+66-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/abrakadam/.gradle/caches/8.14/transforms/455579a8cde73891957e019b7d3662d6/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+67                android:value="androidx.startup" />
+67-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/abrakadam/.gradle/caches/8.14/transforms/455579a8cde73891957e019b7d3662d6/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+68        </provider>
+69
+70        <receiver
+70-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/abrakadam/.gradle/caches/8.14/transforms/455579a8cde73891957e019b7d3662d6/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+71            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+71-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/abrakadam/.gradle/caches/8.14/transforms/455579a8cde73891957e019b7d3662d6/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+72            android:directBootAware="false"
+72-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/abrakadam/.gradle/caches/8.14/transforms/455579a8cde73891957e019b7d3662d6/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+73            android:enabled="true"
+73-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/abrakadam/.gradle/caches/8.14/transforms/455579a8cde73891957e019b7d3662d6/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+74            android:exported="true"
+74-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/abrakadam/.gradle/caches/8.14/transforms/455579a8cde73891957e019b7d3662d6/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+75            android:permission="android.permission.DUMP" >
+75-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/abrakadam/.gradle/caches/8.14/transforms/455579a8cde73891957e019b7d3662d6/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+76            <intent-filter>
+76-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/abrakadam/.gradle/caches/8.14/transforms/455579a8cde73891957e019b7d3662d6/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+77                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+77-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/abrakadam/.gradle/caches/8.14/transforms/455579a8cde73891957e019b7d3662d6/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+77-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/abrakadam/.gradle/caches/8.14/transforms/455579a8cde73891957e019b7d3662d6/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+78            </intent-filter>
+79            <intent-filter>
+79-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/abrakadam/.gradle/caches/8.14/transforms/455579a8cde73891957e019b7d3662d6/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+80                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/abrakadam/.gradle/caches/8.14/transforms/455579a8cde73891957e019b7d3662d6/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/abrakadam/.gradle/caches/8.14/transforms/455579a8cde73891957e019b7d3662d6/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+81            </intent-filter>
+82            <intent-filter>
+82-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/abrakadam/.gradle/caches/8.14/transforms/455579a8cde73891957e019b7d3662d6/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+83                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/abrakadam/.gradle/caches/8.14/transforms/455579a8cde73891957e019b7d3662d6/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/abrakadam/.gradle/caches/8.14/transforms/455579a8cde73891957e019b7d3662d6/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+84            </intent-filter>
+85            <intent-filter>
+85-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/abrakadam/.gradle/caches/8.14/transforms/455579a8cde73891957e019b7d3662d6/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+86                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/abrakadam/.gradle/caches/8.14/transforms/455579a8cde73891957e019b7d3662d6/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/abrakadam/.gradle/caches/8.14/transforms/455579a8cde73891957e019b7d3662d6/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+87            </intent-filter>
+88        </receiver>
+89    </application>
+90
+91</manifest>

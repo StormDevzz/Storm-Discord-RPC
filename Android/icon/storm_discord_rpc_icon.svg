@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Градиентный фон -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#533483;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0F3460;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213E;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="lightningGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E94560;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF6B6B;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Основной круг -->
+  <circle cx="256" cy="256" r="240" fill="url(#bgGradient)" stroke="#7B52AB" stroke-width="4"/>
+  
+  <!-- Декоративные элементы по краям -->
+  <g opacity="0.7">
+    <!-- Верхний левый -->
+    <path d="M 100 100 L 120 80 L 120 120 Z" fill="#7B52AB" opacity="0.8"/>
+    <path d="M 80 100 L 100 80 L 100 120 Z" fill="#533483" opacity="0.6"/>
+    
+    <!-- Верхний правый -->
+    <path d="M 412 100 L 392 80 L 392 120 Z" fill="#7B52AB" opacity="0.8"/>
+    <path d="M 432 100 L 412 80 L 412 120 Z" fill="#533483" opacity="0.6"/>
+    
+    <!-- Нижний левый -->
+    <path d="M 100 412 L 120 432 L 120 392 Z" fill="#7B52AB" opacity="0.8"/>
+    <path d="M 80 412 L 100 432 L 100 392 Z" fill="#533483" opacity="0.6"/>
+    
+    <!-- Нижний правый -->
+    <path d="M 412 412 L 392 432 L 392 392 Z" fill="#7B52AB" opacity="0.8"/>
+    <path d="M 432 412 L 412 432 L 412 392 Z" fill="#533483" opacity="0.6"/>
+  </g>
+  
+  <!-- Центральная молния с свечением -->
+  <g filter="url(#glow)">
+    <!-- Основная молния -->
+    <path d="M 256 140 L 256 220 L 220 220 L 256 280 L 256 220 L 292 220 L 256 140 Z" 
+          fill="url(#lightningGradient)" stroke="#FFFFFF" stroke-width="2" opacity="0.9"/>
+    
+    <!-- Внутренняя молния для эффекта -->
+    <path d="M 256 160 L 256 210 L 240 210 L 256 250 L 256 210 L 272 210 L 256 160 Z" 
+          fill="#FFFFFF" opacity="0.4"/>
+  </g>
+  
+  <!-- Discord логотип (упрощенный) -->
+  <g transform="translate(256, 350)">
+    <!-- Основная форма Discord -->
+    <path d="M -60 -20 Q -60 -30 -50 -30 L 50 -30 Q 60 -30 60 -20 L 60 20 Q 60 30 50 30 L -50 30 Q -60 30 -60 20 Z" 
+          fill="#5865F2" opacity="0.8"/>
+    
+    <!-- Голова Discord -->
+    <circle cx="-20" cy="-5" r="8" fill="#FFFFFF"/>
+    <circle cx="20" cy="-5" r="8" fill="#FFFFFF"/>
+    
+    <!-- Улыбка -->
+    <path d="M -15 5 Q 0 15 15 5" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Текст "Storm" -->
+  <text x="256" y="80" font-family="Arial, sans-serif" font-size="28" font-weight="bold" 
+        text-anchor="middle" fill="#FFFFFF" stroke="#533483" stroke-width="1">
+    Storm
+  </text>
+  
+  <!-- Текст "RPC" -->
+  <text x="256" y="420" font-family="Arial, sans-serif" font-size="24" font-weight="bold" 
+        text-anchor="middle" fill="#B8B8D1" stroke="#0F3460" stroke-width="1">
+    RPC
+  </text>
+  
+  <!-- Анимационные элементы (маленькие частицы) -->
+  <g opacity="0.6">
+    <circle cx="150" cy="150" r="3" fill="#E94560">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="362" cy="150" r="3" fill="#E94560">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="362" r="3" fill="#E94560">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="362" cy="362" r="3" fill="#E94560">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

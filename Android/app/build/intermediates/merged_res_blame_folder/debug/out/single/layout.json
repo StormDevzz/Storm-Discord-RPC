@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "com.storm.discordrpc.app-mergeDebugResources-30:/layout/activity_main.xml",
+        "source": "com.storm.discordrpc.app-main-34:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.storm.discordrpc.app-mergeDebugResources-30:/layout/fragment_settings.xml",
+        "source": "com.storm.discordrpc.app-main-34:/layout/fragment_settings.xml"
+    },
+    {
+        "merged": "com.storm.discordrpc.app-mergeDebugResources-30:/layout/activity_main_with_tabs.xml",
+        "source": "com.storm.discordrpc.app-main-34:/layout/activity_main_with_tabs.xml"
+    },
+    {
+        "merged": "com.storm.discordrpc.app-mergeDebugResources-30:/layout/activity_settings.xml",
+        "source": "com.storm.discordrpc.app-main-34:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "com.storm.discordrpc.app-mergeDebugResources-30:/layout/item_notification_setting.xml",
+        "source": "com.storm.discordrpc.app-main-34:/layout/item_notification_setting.xml"
+    },
+    {
+        "merged": "com.storm.discordrpc.app-mergeDebugResources-30:/layout/activity_help.xml",
+        "source": "com.storm.discordrpc.app-main-34:/layout/activity_help.xml"
+    },
+    {
+        "merged": "com.storm.discordrpc.app-mergeDebugResources-30:/layout/activity_client_id.xml",
+        "source": "com.storm.discordrpc.app-main-34:/layout/activity_client_id.xml"
+    },
+    {
+        "merged": "com.storm.discordrpc.app-mergeDebugResources-30:/layout/fragment_status.xml",
+        "source": "com.storm.discordrpc.app-main-34:/layout/fragment_status.xml"
+    }
+]

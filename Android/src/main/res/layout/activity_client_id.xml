@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/gradient_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Логотип и заголовок -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="32dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_storm_logo"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⚡ Storm Discord RPC"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="8dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Введите Client ID для настройки Rich Presence"
+                android:textSize="16sp"
+                android:textColor="#B8B8D1"
+                android:layout_marginBottom="16dp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <!-- Поле ввода Client ID -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/clientIdEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Client ID (18 цифр)"
+                android:inputType="number"
+                android:maxLength="18"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#B8B8D1"
+                android:background="#0F3460" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Кнопка проверки -->
+        <Button
+            android:id="@+id/validateButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="🔍 Проверить Client ID"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_primary"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"
+            android:enabled="false"
+            android:alpha="0.5" />
+
+        <!-- Прогресс бар -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"
+            android:indeterminateTint="#E94560" />
+
+        <!-- Статус проверки -->
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:padding="12dp"
+            android:background="#1A1A2E" />
+
+        <!-- Имя приложения -->
+        <TextView
+            android:id="@+id/appNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:padding="12dp"
+            android:background="#0F3460"
+            android:visibility="gone" />
+
+        <!-- Кнопка продолжения -->
+        <Button
+            android:id="@+id/continueButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="✅ Продолжить"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_success"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="24dp"
+            android:enabled="false"
+            android:alpha="0.5" />
+
+        <!-- Разделитель -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#533483"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Инструкция с прямыми ссылками -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@drawable/card_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📖 Как получить Client ID?"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1️⃣ Перейдите на Discord Developer Portal"
+                    android:textSize="14sp"
+                    android:textColor="#B8B8D1"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2️⃣ Нажмите 'New Application' → введите название"
+                    android:textSize="14sp"
+                    android:textColor="#B8B8D1"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3️⃣ Скопируйте Application ID (18 цифр)"
+                    android:textSize="14sp"
+                    android:textColor="#B8B8D1"
+                    android:layout_marginBottom="12dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#533483"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🔗 Прямые ссылки:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Discord Developer Portal -->
+                <LinearLayout
+                    android:id="@+id/discordPortalLink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="#1A1A2E"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="🌐 Discord Developer Portal"
+                        android:textSize="14sp"
+                        android:textColor="#B8B8D1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Открыть →"
+                        android:textSize="12sp"
+                        android:textColor="#E94560"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <!-- Rich Presence документация -->
+                <LinearLayout
+                    android:id="@+id/richPresenceDocsLink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="#1A1A2E"
+                    android:padding="12dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="📖 Rich Presence Docs"
+                        android:textSize="14sp"
+                        android:textColor="#B8B8D1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Открыть →"
+                        android:textSize="12sp"
+                        android:textColor="#E94560"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Кнопка подробной справки -->
+        <Button
+            android:id="@+id/helpButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="📚 Подробная инструкция"
+            android:textSize="14sp"
+            android:background="#7B52AB"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>

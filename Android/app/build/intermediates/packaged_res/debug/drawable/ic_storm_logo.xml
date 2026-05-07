@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="80dp"
+    android:viewportWidth="80"
+    android:viewportHeight="80">
+    
+    <!-- Градиентный фон круга -->
+    <path
+        android:fillColor="#533483"
+        android:pathData="M40,10 C55,10 70,25 70,40 C70,55 55,70 40,70 C25,70 10,55 10,40 C10,25 25,10 40,10 Z"/>
+    
+    <!-- Молния -->
+    <path
+        android:fillColor="#E94560"
+        android:pathData="M35,25 L35,40 L30,40 L40,55 L40,40 L45,40 L35,25 Z"/>
+    
+    <!-- Декоративные элементы -->
+    <path
+        android:fillColor="#7B52AB"
+        android:pathData="M20,20 L25,15 L25,25 Z"/>
+    <path
+        android:fillColor="#7B52AB"
+        android:pathData="M60,20 L55,15 L55,25 Z"/>
+    <path
+        android:fillColor="#7B52AB"
+        android:pathData="M20,60 L25,65 L25,55 Z"/>
+    <path
+        android:fillColor="#7B52AB"
+        android:pathData="M60,60 L55,65 L55,55 Z"/>
+</vector>

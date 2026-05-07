@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0-android</TargetFramework>
+    <UseAndroidApplication>true</UseAndroidApplication>
+    <ApplicationId>com.storm.discordrpc</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
+    <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+    <AndroidPackageFormat>apk</AndroidPackageFormat>
+    <AndroidManifest>AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.6.1" />
+    <PackageReference Include="Xamarin.AndroidX.Material" Version="1.10.0" />
+    <PackageReference Include="Xamarin.AndroidX.ConstraintLayout" Version="2.1.4" />
+    <PackageReference Include="Xamarin.AndroidX.CardView" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AndroidResource Include="Resources\**\*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="cs\**\*.cs" />
+  </ItemGroup>
+
+</Project>

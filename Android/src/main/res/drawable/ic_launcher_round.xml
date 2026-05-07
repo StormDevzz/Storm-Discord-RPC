@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Градиентный фон круга -->
+    <path
+        android:fillColor="#533483"
+        android:pathData="M54,10 C81,10 98,27 98,54 C98,81 81,98 54,98 C27,98 10,81 10,54 C10,27 27,10 54,10 Z"/>
+    
+    <!-- Молния -->
+    <path
+        android:fillColor="#E94560"
+        android:pathData="M47,25 L47,40 L42,40 L52,55 L52,40 L57,40 L47,25 Z"/>
+    
+    <!-- Декоративные элементы -->
+    <path
+        android:fillColor="#7B52AB"
+        android:pathData="M34,34 L39,29 L39,39 Z"/>
+    <path
+        android:fillColor="#7B52AB"
+        android:pathData="M74,34 L69,29 L69,39 Z"/>
+    <path
+        android:fillColor="#7B52AB"
+        android:pathData="M34,74 L39,79 L39,69 Z"/>
+    <path
+        android:fillColor="#7B52AB"
+        android:pathData="M74,74 L69,79 L69,69 Z"/>
+    
+    <!-- Буква S для Storm -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,65 Q48,65 48,60 Q48,55 54,55 Q58,55 58,52 Q58,49 54,49 Q50,49 50,52 L46,52 Q46,43 54,43 Q62,43 62,52 Q62,61 54,61 Q50,61 50,64 Q50,67 54,67 Q58,67 58,64 L62,64 Q62,73 54,73 Q46,73 46,64 Q46,57 54,57 Q58,57 58,54 Q58,51 54,51 Q50,51 50,54 L46,54 Q46,45 54,45 Q62,45 62,54 Q62,63 54,63 Q50,63 50,66 Q50,69 54,69 Q58,69 58,66 L62,66 Q62,75 54,75 Q46,75 46,66 Q46,59 54,59 Q58,59 58,56 Q58,53 54,53 Q50,53 50,56 L46,56 Q46,47 54,47 Q62,47 62,56 Q62,65 54,65 Z"
+        android:strokeWidth="1"
+        android:strokeColor="#FFFFFF"/>
+</vector>

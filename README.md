@@ -313,13 +313,6 @@ export STORM_DISCORD_DEBUG=1
 ## License
 
 This project is licensed under MIT License - see [LICENSE](LICENSE) file for details.
-
-## Contact
-
-- **Author**: StormDevzz
-- **Email**: yehorslyvkin@gmail.com
-- **GitHub**: https://github.com/StormDevzz
-
 ```
 Storm Discord RPC/
 ├── Linux/                 # версия для Linux
